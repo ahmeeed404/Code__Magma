@@ -1,3 +1,160 @@
+/* --- carousel--- */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides-wrapper {
+    position: relative; 
+}
+
+/* all slide */
+.carousel-slide {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; 
+    transition: opacity 0.8s ease-in-out; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    min-height: 400px; 
+    padding: 20px;
+    background-size: cover; 
+    background-position: center;
+    background-color: #f8f8f8;
+}
+
+/* les images */
+.slide-1 { background-image: url('../images/hero-carousel/hero-carousel-1.jpg'); } 
+.slide-2 { background-image: url('../images/hero-carousel/hero-carousel-2.jpg'); } 
+.slide-3 { background-image: url('../images/hero-carousel/hero-carousel-3.jpg'); } 
+
+
+.carousel-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.75); 
+    z-index: 1; 
+}
+
+/* content */
+.content {
+    position: relative;
+    z-index: 2; 
+    max-width: 650px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titre, Texte, Btn */
+.title { 
+    font-size: 3.5em; font-weight: 700; line-height: 1.1; color: #333333; margin-bottom: 20px; 
+}
+.title span{
+    color: #e55c4d;
+}
+.text { 
+    font-size: 1.1em; color: #666666; line-height: 1.7; margin-bottom: 30px; 
+}
+.btn {
+    display: inline-block; padding: 12px 30px; background-color: #f76e5e; color: white; text-decoration: none; border-radius: 50px; font-weight: 600;
+}
+.btn:hover { 
+    background-color: #e55c4d;
+}
+
+/* ---  Affichage Slides --- */
+#slide-dot-1:checked ~ .slides-wrapper .slide-1 { opacity: 1; position: relative; }
+#slide-dot-2:checked ~ .slides-wrapper .slide-2 { opacity: 1; position: relative; }
+#slide-dot-3:checked ~ .slides-wrapper .slide-3 { opacity: 1; position: relative; }
+
+
+
+.flashes-nav {
+    display: none;
+}
+
+#slide-dot-1:checked ~ .flashes-nav.flashes-for-1 { display: block; }
+#slide-dot-2:checked ~ .flashes-nav.flashes-for-2 { display: block; }
+#slide-dot-3:checked ~ .flashes-nav.flashes-for-3 { display: block; }
+
+/* L styles of flèches */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #333;
+    font-size: 2.5em;
+    padding: 15px 20px;
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.carousel-control:hover { opacity: 1; }
+.carousel-control.prev { left: 20px; }
+.carousel-control.next { right: 20px; }
+
+
+
+/* Animation of title*/
+.slide-1 .content .title, .slide-2 .content .title, .slide-3 .content .title {
+    animation-name: scroll;
+    animation-duration: 2s;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
+/* Animation of text */
+.slide-1 .content .text, .slide-2 .content .text, .slide-3 .content .text {
+    animation-name: identifier ;
+    animation-duration: 1.5s;
+}
+@keyframes identifier {
+    from{
+        transform: translateY(-180px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/* Animation of btn */
+.slide-1 .content .btn, .slide-2 .content .btn, .slide-3 .content .btn {
+    animation-name: btn;
+    animation-duration: 2s;
+}
+@keyframes btn {
+    from{
+        transform: translateY(150px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +195,7 @@ display: flex;
     color:rgb(245, 245, 245) ;
 }
 .leftIcon, .rightIcon i{
-   color:rgb(209, 101, 82) ; 
+    color:rgb(209, 101, 82) ; 
 }
 .right-top i:hover{
 color:rgb(209, 101, 82) ;
@@ -66,12 +223,12 @@ color:rgb(209, 101, 82) ;
     padding-right: 50px;
 }
 
- .downHeader a{
+.downHeader a{
         color: rgb(84, 84, 84);
 }
 .links{
 display: flex;
-  column-gap: 30px;
+    column-gap: 30px;
 }
 a:hover{
     color: rgb(209, 101, 82);
