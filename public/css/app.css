@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* --- carousel--- */
 .carousel-container {
     position: relative;
@@ -154,12 +159,6 @@
     }
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /* css of header */
 header {
     font-size: 20px;
@@ -308,8 +307,97 @@ a:hover{
 }
 /* end of css Service Section  */
 /* Clients_Section */
+.clients-section {
+    padding: 60px 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 50px;
+}
+.clients-section .title h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+     color: #555;
+     font-family: 'Segoe UI';
+}
+.section-title {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px; 
+  display: inline-block;
+}
+/*border title*/
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;      
+  height: 3px;      
+  background: #e55c4d; 
+  border-radius: 2px;
+}
+.clients-section .title p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    padding-inline: 70px;
+}
+.btnscroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;   
+  gap: 8px;           
+}
+.btnscroll button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  background: #66666644; 
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btnscroll button.active {
+  background: #e55c4d;   
+}
+/* SLIDER */
+.slider {
+    overflow: hidden;
+    width: 100%;
+}
+.slide-track {
+    display: flex;
+    width: max-content; 
+    transition: transform 0.5s ease; 
+    /* width: calc(200px * 16);
+    animation: scroll 24s linear infinite;  */
+}
+.slide {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide img {
+    width: 120px;
+    opacity: 0.7;
+    transition: 0.3s;
+    filter: grayscale(100%);
+}
+.slide img:hover {
+    opacity: 1;
+    filter: none;
+}
 
-
+/* Animation auto */
+/* @keyframes scroll {} */
+/* end of css Client Section */
 
 /* css footer part */
 footer{
