@@ -225,9 +225,18 @@
     box-sizing: border-box;
 }
 
+body {
+    padding-top: 120px;
+}
+
 /* css of header */
 header {
     font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .topHeader {
@@ -239,6 +248,7 @@ header {
     color: rgb(245, 245, 245);
     padding-left: 50px;
     padding-right: 50px;
+
 }
 
 a {
@@ -537,21 +547,42 @@ h4 {
 
 /* media query */
 @media (max-width: 425px) {
+    body {
+        padding-top: 60px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+
+
+    }
+
     .topHeader {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 10vh;
+
     }
 
-    .left-top {
+    .left-top .leftIcon {
         display: flex;
         align-items: center;
-        gap: 8px;
+
+
 
     }
 
+    .left-top .rightIcon {
+        display: flex;
+        align-items: center;
+        width: 40vw;
 
+    }
 
     .topHeader .right-top {
         display: none;
@@ -565,19 +596,23 @@ h4 {
 
     .downHeader .links {
         display: none;
+        color: white;
     }
 
 
     .open {
         display: block;
 
-
-
     }
 
-    /* footer{
-     background-color: rgb(79, 79, 79); 
-    } */
+    .close {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
     .topFooter {
         display: flex;
         align-items: center;
@@ -597,10 +632,17 @@ h4 {
         color: rgb(232, 108, 86);
         border-color: rgb(232, 108, 86);
     }
-    .footerLinks i {
+
+    .rightMiddle i {
         display: inline-flex;
         align-items: center;
-        width: 60vw;
+
+
+    }
+
+    .second {
+        display: inline-flex;
+        align-items: center;
 
     }
 
@@ -624,5 +666,31 @@ h4 {
     .topFooter input {
         width: 80vw;
         height: 35px;
+    }
+
+    .links {
+        flex-direction: column;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        top: 10vh;
+        left: 30vw;
+        padding: 20px;
+        transition: 1s ease;
+        color: rgb(255, 255, 255);
+        background-color: #333333;
+
+    }
+
+    #check:checked~.links {
+        left: 0;
+    }
+
+    #check:checked~.open {
+        display: none;
+    }
+
+    #check:checked~.close {
+        display: block;
     }
 }
