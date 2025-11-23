@@ -422,11 +422,11 @@ position: relative;
 
 /* last part of footer */
 .endFooter{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    /* height: 10vh; */
 }
 .endFooter span{
     font-weight: bold;
