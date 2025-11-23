@@ -39,6 +39,7 @@ display: flex;
 }
 .leftIcon, .rightIcon i{
     color:rgb(209, 101, 82) ; 
+    color:rgb(209, 101, 82) ; 
 }
 .right-top i:hover{
 color:rgb(209, 101, 82) ;
@@ -66,12 +67,12 @@ color:rgb(209, 101, 82) ;
     padding-right: 50px;
 }
 
- .downHeader a{
+.downHeader a{
         color: rgb(84, 84, 84);
 }
 .links{
 display: flex;
-  column-gap: 30px;
+    column-gap: 30px;
 }
 a:hover{
     color: rgb(209, 101, 82);
@@ -358,7 +359,7 @@ footer a:hover{
     right: 29vw; 
 }
 .middleFooter{
-   margin-bottom: 70px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -414,4 +415,3 @@ position: relative;
 .endFooter span{
     font-weight: bold;
 }
-
