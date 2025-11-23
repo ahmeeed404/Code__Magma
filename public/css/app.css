@@ -1,4 +1,4 @@
-/* --- L'Haykal L'3amm --- */
+/* --- carousel--- */
 .carousel-container {
     position: relative;
     max-width: 100%;
@@ -9,14 +9,14 @@
     position: relative; 
 }
 
-/* L'Haykal l'3amm dyal kol slide */
+/* all slide */
 .carousel-slide {
-    position: absolute; /* Muhim: Bach yjiw wa7ed fouq wa7ed */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0; /* Kan-khabiw kolchi */
-    transition: opacity 0.7s ease-in-out; /* Animation dyal passage */
+    opacity: 0; 
+    transition: opacity 0.7s ease-in-out; 
     
     display: flex;
     align-items: center; 
@@ -28,12 +28,12 @@
     background-color: #f8f8f8;
 }
 
-/* --- T3rif Images L'Moukhtassa --- */
+/* --- Images --- */
 .slide-1 { background-image: url('../images/hero-carousel/hero-carousel-1.jpg'); } /* Bddel l'path */
 .slide-2 { background-image: url('../images/hero-carousel/hero-carousel-2.jpg'); } /* Bddel l'path */
 .slide-3 { background-image: url('../images/hero-carousel/hero-carousel-3.jpg'); } /* Bddel l'path */
 
-/* L'Overlay */
+
 .carousel-slide::after {
     content: '';
     position: absolute;
@@ -45,7 +45,7 @@
     z-index: 1; 
 }
 
-/* L'Contenu lli f wast l'slide */
+/* content */
 .content {
     position: relative;
     z-index: 2; 
@@ -58,7 +58,7 @@
     align-items: center;
 }
 
-/* Titre, Texte, btn */
+/* Titre, Texte, Btn */
 .title { 
     font-size: 3.5em; font-weight: 700; line-height: 1.1; color: #333333; margin-bottom: 20px; 
 }
@@ -75,13 +75,12 @@
     background-color: #e55c4d;
 }
 
-/* --- L'Mécanisme L'Muhim dyal CSS (Affichage Slides) --- */
+/* ---  Affichage Slides --- */
 #slide-dot-1:checked ~ .slides-wrapper .slide-1 { opacity: 1; position: relative; }
 #slide-dot-2:checked ~ .slides-wrapper .slide-2 { opacity: 1; position: relative; }
 #slide-dot-3:checked ~ .slides-wrapper .slide-3 { opacity: 1; position: relative; }
 
 
-/* --- Nida' L'Flèches (Affichage Flèches dyal Kol Groupe) --- */
 .flashes-nav {
     display: none;
 }
@@ -90,7 +89,7 @@
 #slide-dot-2:checked ~ .flashes-nav.flashes-for-2 { display: block; }
 #slide-dot-3:checked ~ .flashes-nav.flashes-for-3 { display: block; }
 
-/* L'Styles dyal l'Flèches */
+/* L styles of flèches */
 .carousel-control {
     position: absolute;
     top: 50%;
@@ -112,7 +111,7 @@
 
 
 
-/* animation dyal title*/
+/* Animation of title*/
 .slide-1 .content .title, .slide-2 .content .title, .slide-3 .content .title {
     animation-name: scroll;
     animation-duration: 2s;
@@ -127,7 +126,7 @@
     }
     
 }
-/* animation dyal text */
+/* Animation of text */
 .slide-1 .content .text, .slide-2 .content .text, .slide-3 .content .text {
     animation-name: identifier ;
     animation-duration: 1.5s;
@@ -141,7 +140,7 @@
     }
 }
 
-/* animation dyal btn */
+/* Animation of btn */
 .slide-1 .content .btn, .slide-2 .content .btn, .slide-3 .content .btn {
     animation-name: btn;
     animation-duration: 2s;
