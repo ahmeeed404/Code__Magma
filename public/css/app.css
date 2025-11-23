@@ -326,6 +326,7 @@ a:hover{
     flex-direction: column;
     gap: 3vw;    
 }
+
 .secound-side .box-type > .column > div {
     display: flex;
     align-items: self-start;
