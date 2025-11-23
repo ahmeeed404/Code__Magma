@@ -11,13 +11,12 @@
 
 /* L'Haykal l'3amm dyal kol slide */
 .carousel-slide {
-    position: absolute; /* Muhim: Bach yjiw wa7ed fouq wa7ed */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0; /* Kan-khabiw kolchi */
-    transition: opacity 0.7s ease-in-out; /* Animation dyal passage */
-    
+    opacity: 0; 
+    transition: opacity 0.8s ease-in-out; 
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -28,12 +27,12 @@
     background-color: #f8f8f8;
 }
 
-/* --- T3rif Images L'Moukhtassa --- */
-.slide-1 { background-image: url('../images/hero-carousel/hero-carousel-1.jpg'); } /* Bddel l'path */
-.slide-2 { background-image: url('../images/hero-carousel/hero-carousel-2.jpg'); } /* Bddel l'path */
-.slide-3 { background-image: url('../images/hero-carousel/hero-carousel-3.jpg'); } /* Bddel l'path */
+/* les images */
+.slide-1 { background-image: url('../images/hero-carousel/hero-carousel-1.jpg'); } 
+.slide-2 { background-image: url('../images/hero-carousel/hero-carousel-2.jpg'); } 
+.slide-3 { background-image: url('../images/hero-carousel/hero-carousel-3.jpg'); } 
 
-/* L'Overlay */
+
 .carousel-slide::after {
     content: '';
     position: absolute;
@@ -81,7 +80,7 @@
 #slide-dot-3:checked ~ .slides-wrapper .slide-3 { opacity: 1; position: relative; }
 
 
-/* --- Nida' L'Flèches (Affichage Flèches dyal Kol Groupe) --- */
+
 .flashes-nav {
     display: none;
 }
@@ -156,3 +155,90 @@
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css of header */
+header {
+    font-size: 20px;
+}
+
+.topHeader {
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    color:rgb(245, 245, 245) ;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-top {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    
+    
+}
+.rightIcon{
+display: flex;
+}
+
+.leftIcon a{
+    color:rgb(245, 245, 245) ;
+}
+.leftIcon, .rightIcon i{
+    color:rgb(209, 101, 82) ; 
+}
+.right-top i:hover{
+color:rgb(209, 101, 82) ;
+}
+
+.right-top i{
+    color: white;
+}
+
+
+.right-top  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.downHeader {
+    background-color: rgb(255, 255, 255) ;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.downHeader a{
+        color: rgb(84, 84, 84);
+}
+.links{
+display: flex;
+    column-gap: 30px;
+}
+a:hover{
+    color: rgb(209, 101, 82);
+}
+
+/* end of css f header  */
+
+
+
+/* footer{
+    background-color: rgb(61, 61, 61);
+    width: ;
+} */
