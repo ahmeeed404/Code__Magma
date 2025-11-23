@@ -1,39 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./public/style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eterna</title>
+    <link rel="stylesheet" href="./public/css/app.css">
 </head>
-<!-- this section is for header (navbar) -->
- <header></header>
-
- <!-- hero section -->
-  <section></section>
-
-
-
-  <!-- "about " section -->
-   <section></section>
-
-
-   <!-- "services section" -->
-    <section></section>
-
-
-    <!-- "clients section" -->
-     <section></section>
-
-
-     <!-- last section "footer" -->
-      <footer></footer>
 <body>
+ 
+    <div class="carousel-container">
+    
+    <input type="radio" name="slider" id="slide-dot-1" checked hidden>
+    <input type="radio" name="slider" id="slide-dot-2" hidden>
+    <input type="radio" name="slider" id="slide-dot-3" hidden>
+
+    <div class="slides-wrapper">
+        
+        <div class="carousel-slide slide-1">
+            <div class="content">
+                <h1 class="title">Welcome to <span>Eterna</span>  </h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+
+        <div class="carousel-slide slide-2">
+            <div class="content">
+                <h1 class="title">At vero eos et accusamus</h1>
+                <p class="text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+
+        <div class="carousel-slide slide-3">
+            <div class="content">
+                <h1 class="title">Temporibus autem quibusdam</h1>
+                <p class="text">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flashes-nav flashes-for-1">
+        <label for="slide-dot-3" class="carousel-control prev">&#10094;</label>
+        <label for="slide-dot-2" class="carousel-control next">&#10095;</label>
+    </div>
+
+    <div class="flashes-nav flashes-for-2">
+        <label for="slide-dot-1" class="carousel-control prev">&#10094;</label>
+        <label for="slide-dot-3" class="carousel-control next">&#10095;</label>
+    </div>
+
+    <div class="flashes-nav flashes-for-3">
+        <label for="slide-dot-2" class="carousel-control prev">&#10094;</label>
+        <label for="slide-dot-1" class="carousel-control next">&#10095;</label>
+    </div>
+    
+</div>
+
 
 </body>
-
 </html>
+
