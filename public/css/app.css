@@ -158,3 +158,99 @@ a:hover{
     background-color: rgb(61, 61, 61);
     width: ;
 } */
+footer{
+    background-color:rgb(61, 61, 61) ;
+    color: rgb(255, 255, 255);
+    height: 90vh;
+}
+.topFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(69, 69, 69);
+    height: 40vh;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+footer a:hover{
+    color: rgb(232, 108, 86);
+}
+.topFooter input{
+    position: relative;
+    border-radius: 20px / 30px;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    width: 40vw;
+    height: 33px;
+}
+.topFooter button{
+    position: absolute;
+    width: 13vw;
+    height: 35px;
+    border-radius: 20px / 30px;
+    border: none;
+    background-color: rgb(232, 108, 86);
+    color: white;
+    right: 29vw; 
+}
+.middleFooter{
+   margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-left: 70px;
+    padding-right: 70px;  
+}
+.leftMiddle{
+    width: 40vw;
+}
+.middleFooter i{
+    color:rgb(232, 108, 86) ;
+}
+.rightMiddle{
+    display: grid;
+    grid-template-columns: 100px 90px 90px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.fotterMedia i{
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.fotterMedia i:hover{
+    color:rgb(232, 108, 86) ;
+    border-color: rgb(232, 108, 86); 
+}
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footerBrd{
+background-color: rgb(79, 79, 79);
+height: 1px;
+width: 90vw;
+left: 5%;
+position: relative;
+}
+.endFooter{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.endFooter span{
+    font-weight: bold;
+}
+
