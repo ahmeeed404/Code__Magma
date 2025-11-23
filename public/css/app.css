@@ -544,6 +544,9 @@ h4 {
     display: none;
 
 }
+.close{
+    display: none;
+}
 
 /* media query */
 @media (max-width: 425px) {
