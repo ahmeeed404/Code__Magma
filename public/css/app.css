@@ -810,7 +810,7 @@ header {
 footer {
     background-color: rgb(61, 61, 61);
     color: rgb(255, 255, 255);
-    height: 90vh;
+    height: auto;
 }
 
 /* top footer */
@@ -858,21 +858,20 @@ footer a:hover {
 .middleFooter{
     margin-bottom: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 70px;
+    gap: 30px;
     padding-top: 30px;
     padding-left: 70px;
     padding-right: 70px;
-    background-color: rgb(61, 61, 61);
 }
 
 /* left part of middle part */
 .leftMiddle {
-    width: 40vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    gap: 2vw;
+    padding-right: 2vw;
 }
 
 .middleFooter i {
@@ -880,22 +879,33 @@ footer a:hover {
 }
 
 /*right part of middle  */
-.rightMiddle {
-    display: grid;
-    grid-template-columns: 100px 90px 90px;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-
-}
-
-.rightMiddle .fotterMedia,
-.footerLinks,
-h4 {
+.rightMiddle , .second {
+    display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    align-items: start;
+    justify-content: start;
+    /* background-color: #e8765b; */
 }
-
+.second >div {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    width: 90%;
+}
+.second > div > .fa-solid  , .footerLinks > div > .fa-solid {
+    width: 10%;
+}
+.fotterMedia{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 90%;
+}
+.fotterMedia > div {
+    display: flex;
+    gap: 1vw;
+}
 .fotterMedia i {
     color: white;
     border-radius: 50%;
@@ -915,8 +925,10 @@ h4 {
 .footerLinks {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 20vw;
+    width:15vw;
+    gap: 0.5vw;
+    justify-content: start;
+
 }
 
 /* the border in footer */
