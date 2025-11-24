@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body {
+    padding-top: 120px;
+}
+/* css of header */
+header {
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.topHeader {
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    color: rgb(245, 245, 245);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+a {
+    text-decoration: none;
+}
+.left-top {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+}
+
+.rightIcon {
+    display: flex;
+}
+.leftIcon a{
+    color:rgb(245, 245, 245) ;
+}
+.leftIcon, .rightIcon i{
+    color:rgb(209, 101, 82) ; 
+    color:rgb(209, 101, 82) ; 
+}
+.right-top i:hover{
+color:rgb(209, 101, 82) ;
+}
+.leftIcon a {
+    color: rgb(245, 245, 245);
+}
+.leftIcon,
+.rightIcon i {
+    color: rgb(209, 101, 82);
+}
+.right-top i:hover {
+    color: rgb(209, 101, 82);
+}
+.right-top i {
+    color: white;
+}
+.right-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.downHeader {
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.downHeader a {
+    color: rgb(84, 84, 84);
+}
+.links {
+    display: flex;
+    column-gap: 30px;
+}
+a:hover {
+    color: rgb(209, 101, 82);
+}
+/* css of header */
+header {
+    font-size: 20px;
+}
+/* end of css f header  */
+#check {
+    display: none;
+}
+/*Title&cont*/
+.page-title {
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 20px 50px;
+  position: relative;
+}
+.page-title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.page-title .titlelink ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+}
+.page-title .titlelink ol li+li {
+  padding-left: 10px;
+}
+.page-title .titlelink ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+
+}
+/*End of Title&cont*/
+
+/* Service_Section */
+/* Section */
+.services {
+    padding: 60px 50px;
+}
+
+/* Grid_card */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Card */
+.service-card {
+    background: #fff;
+    padding: 80px 25px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* HoverCard_effet */
+.service-card:hover {
+    background: #e8765b;
+    color: #fff;
+    border-color: transparent;
+}
+
+/* Icon */
+.service-card .icon {
+    font-size: 35px;
+    background: #e8765b;
+    /* box-shadow: -8px -8px #e8755b4f; */
+    box-shadow: -8px -8px #eabbb271;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    transition: 0.3s;
+}
+
+/* HoverIcon_effet */
+.service-card:hover .icon {
+    background: #fff;
+    color: #e8765b;
+    box-shadow: -8px -8px #eabbb2d2;
+}
+
+/* Title */
+.service-card h3 {
+    font-size: 23px;
+    font-family: 'Segoe UI';
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* HoverTitle_effet */
+.service-card:hover h3 {
+    color: #fff;
+}
+
+/* Text */
+.service-card p {
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    line-height: 1.6;
+    color: #555;
+}
+
+/* HoverText_effet */
+.service-card:hover p {
+    color: #fff;
+}
+
+/* end of css Service Section  */
+
+/* Skills Section  */
+.clients-section {
+    padding: 60px 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 50px;
+}
+.clients-section .title h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+     color: #555;
+     font-family: 'Segoe UI';
+}
+.section-title {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px; 
+  display: inline-block;
+}
+/*border title*/
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;      
+  height: 3px;      
+  background: #e55c4d; 
+  border-radius: 2px;
+}
+.clients-section .title p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    padding-inline: 70px;
+}
+/* end of css Skills Section  */
+
+/* Skills Section2  */
+.skills-section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.skills-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 40px;
+}
+
+/* --------- COLONNE IMAGE --------- */
+.skills-image {
+    flex: 1;
+}
+.skills-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* --------- COLONNE TEXTE --------- */
+.skills-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.skills-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.skills-content p {
+    color: #555555b8;
+    font-style: italic;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* TITRE + POURCENTAGE */
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* BARRES */
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    background: #e55c4d;
+}
+
+/* Pourcentages */
+.p100 { width: 100%; }
+.p90  { width: 90%; }
+.p75  { width: 75%; }
+.p55  { width: 55%; }
+
+/* --RESPONSIVE-- */
+@media (max-width: 992px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-content {
+        padding-right: 0;
+    }
+}
+
+/* end of css Service Section2  */
+
+/* css footer part */
+footer {
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+/* top footer */
+.topFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(69, 69, 69);
+    height: 40vh;
+    row-gap: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white
+}
+
+footer a:hover {
+    color: rgb(232, 108, 86);
+}
+
+.topFooter input {
+    position: relative;
+    border-radius: 20px / 30px;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    width: 40vw;
+    height: 33px;
+}
+
+.topFooter button {
+    position: absolute;
+    width: 13vw;
+    height: 35px;
+    border-radius: 20px / 30px;
+    border: none;
+    background-color: rgb(232, 108, 86);
+    color: white;
+    right: 29vw;
+}
+
+/* second part of footer */
+
+.middleFooter{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgb(61, 61, 61);
+}
+
+/* left part of middle part */
+.leftMiddle {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.middleFooter i {
+    color: rgb(232, 108, 86);
+}
+
+/*right part of middle  */
+.rightMiddle {
+    display: grid;
+    grid-template-columns: 0px 20px 90px;
+    align-items: center;
+    justify-content: center;
+    /* gap: 40px; */
+}
+
+.rightMiddle .fotterMedia,
+.footerLinks,
+h4 {
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.fotterMedia i {
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.fotterMedia i:hover {
+    color: rgb(232, 108, 86);
+    border-color: rgb(232, 108, 86);
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+}
+
+.fotterMedia{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 15px;
+}
+/* the border in footer */
+.footerBrd {
+    background-color: rgb(79, 79, 79);
+    height: 1px;
+    width: 90vw;
+    left: 5%;
+    position: relative;
+}
+
+/* last part of footer */
+.endFooter {
+    display: block;
+    text-align: center;
+}
+.endFooter p>a {
+    color: #e55c4d;
+    text-decoration: none;
+    transition: 0.3s;
+} 
+.endFooter span {
+    font-weight: bold;
+}
+
+/* media query */
+@media (max-width: 425px){
+    
+}
+
+.open {
+    display: none;
+
+}
+.close{
+    display: none;
+}
+
+/* media query */
+@media (max-width: 425px) {
+    body {
+        padding-top: 60px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+
+
+    }
+
+    .topHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+
+    }
+
+    .left-top .leftIcon {
+        display: flex;
+        align-items: center;
+
+
+
+    }
+
+    .left-top .rightIcon {
+        display: flex;
+        align-items: center;
+        width: 40vw;
+
+    }
+
+    .topHeader .right-top {
+        display: none;
+    }
+
+    .downHeader {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .downHeader .links {
+        display: none;
+        color: white;
+    }
+
+
+    .open {
+        display: block;
+
+    }
+
+    .close {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .topFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .middleFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 20px;
+    }
+
+    .fotterMedia i:hover {
+        color: rgb(232, 108, 86);
+        border-color: rgb(232, 108, 86);
+    }
+
+    .rightMiddle i {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .second {
+        display: inline-flex;
+        align-items: center;
+
+    }
+
+    .footerBrd {
+        background-color: rgb(79, 79, 79);
+        width: 100%;
+        left: 0%;
+    }
+
+    .endFooter {
+        height: 20vh;
+        background-color: rgb(61, 61, 61);
+        padding-top: 10px;
+    }
+
+    .topFooter button {
+        right: 10vw;
+        width: 25vw;
+    }
+
+    .topFooter input {
+        width: 80vw;
+        height: 35px;
+    }
+
+    .links {
+        flex-direction: column;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        top: 10vh;
+        left: 30vw;
+        padding: 20px;
+        transition: 1s ease;
+        color: rgb(255, 255, 255);
+        background-color: #333333;
+    }
+
+    #check:checked~.links {
+        left: 0;
+    }
+
+    #check:checked~.open {
+        display: none;
+    }
+
+    #check:checked~.close {
+        display: block;
+    }
+}
