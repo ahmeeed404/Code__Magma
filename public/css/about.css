@@ -61,7 +61,7 @@
 }
 .data .box .column p > span{
     font-weight: 700;
-    color: #80808096;
+    color: #808080f7;
 }
 .data .box .column >p {
     color: #80808096;
@@ -142,7 +142,92 @@
     font-weight: 800;
     padding-inline: 1vw;
 }
-/* i{
-    font-size: 30px;
-    color: #e8765b;
-} */
+/* ^ media */
+@media (max-width: 440px) {
+    .hero{
+    background-color: #80808029;
+    padding: 10px 50px;
+    margin-top: 25vw;
+    display: grid;
+    gap: 0.2vw;
+}
+/* section data */
+.data{
+
+    padding-top: 15vw;
+    display: grid;
+    gap: 15vw;
+}
+.data .box{
+    width: 100%;
+    align-items: center;
+}
+.data > .box .cart{
+    gap: 2vw;
+    font-size: 8vw;
+    font-weight: 600;
+}
+.data > .box .cart i{
+    font-size: 6vw;
+}
+.data > .box  .column {
+    padding-left: 40vw;    
+}
+.data .box .column p > span{
+    font-weight: 700;
+    color: #808080f7;
+
+
+}
+.data .box .column >p {
+    color: #80808096;
+    width: 100%;
+}
+/* last section */
+.last-section{
+    gap: 8vw;
+}
+.last-section h1 {
+    font-size: 40px;
+}
+.last-section h1::before{
+    bottom: -2.5vw ;
+    left: 20vw
+    
+}
+.last-section .box .cart img{
+    width: 20%;
+    height: 20%;
+}
+.last-section .box{
+    grid-template-columns: 1fr ;
+    gap: 5vw;
+}
+.last-section .box .cart{
+    display: flex;
+    gap: 2vw;
+}
+.last-section .content{
+    gap: 2vh;
+    width: 100%;
+}
+.last-section .info{
+    gap: 0vw;
+    width: 50%;
+}
+.last-section .info > div {
+    padding-top: 1vh;
+    font-size: 10px;
+}
+.last-section .info h5 {
+    font-size: 15px;
+} 
+.last-section .info p{
+    font-size: 12px;
+}
+.last-section .text{
+    width: 90%;
+    line-height: 2vh;
+}
+
+}
