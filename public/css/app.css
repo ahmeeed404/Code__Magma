@@ -1126,6 +1126,7 @@ h4 {
     #check:checked~.close {
         display: block;
     }
+    
 
     /* ~ hero section */
     .carousel-control {
