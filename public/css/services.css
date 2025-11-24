@@ -264,7 +264,6 @@ header {
     gap: 40px;
 }
 
-/* --------- COLONNE IMAGE --------- */
 .skills-image {
     flex: 1;
 }
@@ -275,7 +274,7 @@ header {
     border-radius: 6px;
 }
 
-/* --------- COLONNE TEXTE --------- */
+/* -- COLONNE TEXTE -- */
 .skills-content {
     flex: 1;
     padding-right: 30px;
@@ -295,7 +294,7 @@ header {
     line-height: 1.7;
 }
 
-/* TITRE + POURCENTAGE */
+/* TITRE & POURCENTAGE */
 .skill p {
     display: flex;
     justify-content: space-between;
@@ -324,17 +323,6 @@ header {
 .p90  { width: 90%; }
 .p75  { width: 75%; }
 .p55  { width: 55%; }
-
-/* --RESPONSIVE-- */
-@media (max-width: 992px) {
-    .skills-container {
-        flex-direction: column;
-    }
-
-    .skills-content {
-        padding-right: 0;
-    }
-}
 
 /* end of css Service Section2  */
 
@@ -478,11 +466,6 @@ h4 {
     font-weight: bold;
 }
 
-/* media query */
-@media (max-width: 425px){
-    
-}
-
 .open {
     display: none;
 
@@ -490,6 +473,22 @@ h4 {
 .close{
     display: none;
 }
+
+/* media query */
+@media (max-width: 425px){
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-content {
+        padding-right: 0;
+    }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* media query */
 @media (max-width: 425px) {
