@@ -1095,31 +1095,61 @@ h4 {
         height: 35px;
     }
 
-    .links {
+
+.downHeader .links {
+        position: fixed;
+        top: 0;
+        left: -70%;
+        width: 100vw;         
+        height: 100vh;        
+        background-color: #333;
+        display: flex;
         flex-direction: column;
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        top: 10vh;
-        left: 30vw;
-        padding: 20px;
-        transition: 1s ease;
-        color: rgb(255, 255, 255);
-        background-color: #333333;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: left 0.3s ease;
+        z-index: 9999;   
+        color: white;    
+}
 
-    }
 
-    #check:checked~.links {
-        left: 0;
-    }
+#check:checked ~ .links {
+    left: 0;
+    
+}
 
-    #check:checked~.open {
-        display: none;
-    }
 
-    #check:checked~.close {
-        display: block;
-    }
+.downHeader .open {
+    display: block;
+}
+
+
+.downHeader .close {
+    display: none;
+}
+
+
+#check:checked ~ .open {
+    display: none;
+}
+
+#check:checked ~ .close {
+    display: block;
+}
+.downHeader .links a {
+    color: white;       
+    text-decoration: none;
+}
+.downHeader .close label i {
+    color: white;       
+    font-size: 2em;
+   position: absolute;          
+    top: 20px;
+    right: 20px;
+    z-index: 10000;}
+
+
     
 
     /* ~ hero section */
