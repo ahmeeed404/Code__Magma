@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+.hero{
+    background-color: #80808029;
+    padding: 10px 50px;
+    display: grid;
+    gap: 0.2vw;
+}
+.hero > div {
+    display: flex;
+    gap: 1vw;
+}
+.hero div > a{
+    text-decoration: none;
+    color: #e8765b;
+}
+.hero div > a::after{
+    content: '/';
+    padding-left: 5px;
+    color: #808080b8;
+}
+.hero h3{
+    font-size: 33px;
+    color: #000000ce;
+}
+/* secound section */
+.secound-section{
+    margin-top: 6vw;
+}
+
+/* section data */
+.data{
+    padding: 6vw 8vw;
+    display: flex;
+    gap: 3vw;
+}
+.data .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    width: 100%;
+}
+.data > .box .cart{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 4vw;
+    font-weight: 500;
+    color: #000000c4;
+}
+.data > .box .cart i{
+    color: #e8765b ;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+.data > .box  .column {
+    padding-left: 4vw;
+}
+.data .box .column p > span{
+    font-weight: 700;
+    color: #80808096;
+}
+.data .box .column >p {
+    color: #80808096;
+    width: 10vw;
+}
+/* last section */
+.last-section{
+    padding: 6vw 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3vw;
+    justify-items: center;
+}
+.last-section h1 {
+    color: #000000bc;
+    position: relative;
+}
+.last-section h1::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #e8765b;
+    position: absolute;
+    bottom: -1.5vw ;
+    left: 5vw
+    
+}
+.last-section .box .cart img{
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.last-section .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+.last-section .box .cart{
+    display: flex;
+    gap: 2vw;
+   
+
+}
+.last-section .content{
+    display: grid;
+    box-shadow: 0 4px 9px rgb(0,0,0,0.1);
+    gap: 2vw;
+}
+.last-section .info{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    gap: 0.2vw;
+    width: 90%;
+}
+.last-section .info > div {
+    padding-top: 2vh;
+    color: #ffc107;
+}
+.last-section .info h5 {
+    color: #000000ca;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+} 
+.last-section .info p{
+    color: #4d4c4cc4;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.last-section .text{
+    font-style: italic;
+    width: 90%;
+    line-height: 5vh;
+}
+.last-section .text > i{
+    color: #e8755bcd;
+    font-size: 2vw;
+    font-weight: 800;
+    padding-inline: 1vw;
+}
+/* i{
+    font-size: 30px;
+    color: #e8765b;
+} */
