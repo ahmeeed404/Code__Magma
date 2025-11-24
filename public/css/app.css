@@ -322,7 +322,13 @@ color:rgb(209, 101, 82) ;
 .downHeader a {
     color: rgb(84, 84, 84);
 }
-
+.downHeader>.logo a {
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+    font-size: 25px;
+    border-left: #e55c4d solid 10px;
+    padding-left: 5px;
+}
 .links {
     display: flex;
     column-gap: 30px;
