@@ -272,6 +272,8 @@ a {
 
 .rightIcon {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .leftIcon a{
     color:rgb(245, 245, 245) ;

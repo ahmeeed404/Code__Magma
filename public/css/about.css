@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+     box-sizing: border-box;
     font-family: 'Segoe UI';
 }
 .downHeader>.logo a {
@@ -11,8 +12,8 @@
     padding-left: 5px;
 }
 .hero{
-    background-color: #80808029;
-    padding: 10px 50px;
+    background-color: #f9f9f9;
+    padding: 20px 50px;
     display: grid;
     gap: 0.2vw;
 }
@@ -30,8 +31,9 @@
     color: #808080b8;
 }
 .hero h3{
-    font-size: 33px;
-    color: #000000ce;
+    font-size: 28px;
+    font-weight: 700;
+    color: #555;
 }
 /* secound section */
 .secound-section{
