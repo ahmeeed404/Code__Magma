@@ -1,3 +1,10 @@
+.downHeader>.logo a {
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+    font-size: 25px;
+    border-left: #e55c4d solid 10px;
+    padding-left: 5px;
+}
 .topContact {
     background-color: rgb(247, 247, 247);
     display: flex;
@@ -156,6 +163,32 @@ form button {
 
 form button:hover {
     background: #cf5a4b;
+}
+/* btn_bckToTop */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+    background: #e8765b;
+    color: white;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    z-index: 999;
+}
+.back-to-top:hover {
+    background-color: #e8755b2a;
+}
+.back-to-top i {
+    font-size: 22px;
+    line-height: 0;
 }
 
 
