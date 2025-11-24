@@ -946,7 +946,7 @@ h4 {
 }
 
 /* media query */
-@media (max-width: 425px) {
+@media (max-width: 440px) {
     body {
         padding-top: 60px;
     }
